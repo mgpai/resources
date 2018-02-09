@@ -9,6 +9,7 @@ if (readyForUpdate()) callAPI("update", "restartAndUpdate");
 function readyForUpdate() {
     if (interval < 60000) return;
     if (!callAPI("update", "isUpdateAvailable")) return;
+    if (!isDownloadControllerIdle()) return;
     if (callAPI("linkcrawler", "isCrawling")) return;
     if (callAPI("linkgrabberv2", "isCollecting")) return;
     if (callAPI("extraction", "getQueue").length > 0) return;
