@@ -17,14 +17,16 @@
      }
 
      if (newIP && newIP != oldIP) {
+         setAutoReconnect(false);
          setProperty("oldIP", newIP, true);
          var startBytes = loadedBytes();
          sleep(checkDuration * 60 * 1000);
          var endBytes = loadedBytes();
 
          if (startBytes == endBytes) {
-             setAutoReconnect(false);
              sleep(disableDuration * 60 * 1000);
+             setAutoReconnect(true);
+         } else {
              setAutoReconnect(true);
          }
      }
@@ -33,7 +35,7 @@
  //Function
  function getIP() {
      try {
-         return getPage("http://api.ipify.org");
+         return getPage("http://ipcheck0.jdownloader.org");
      } catch (e) {
          return null
      }
