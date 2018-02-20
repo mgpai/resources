@@ -4,7 +4,7 @@
 // Related Topic: https://board.jdownloader.org/showthread.php?t=76639
 
 var maxReconnects = 3; // <- Maximum alllowed reconnects
-var duration = 10; // <- Duration (in minutes) to check if the number of reconnects have exceed the max allowed reonnects
+var duration = 10; // <- Duration (in minutes) to check if the number of reconnects have exceeded the max allowed reonnects
 var disableDuration = 60; // <- Duration  (in minutes) for which auto-reconnect will be disabled if reconnects exceed the specified limit
 
 if (!getProperty("timeList", true)) setProperty("timeList", [], true);
