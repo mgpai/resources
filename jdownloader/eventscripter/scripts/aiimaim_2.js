@@ -21,7 +21,6 @@ if (totalReconnects >= maxReconnects) {
         setAutoReconnectEnabled(false);
         sleep(disableDuration * 60 * 1000);
         setAutoReconnectEnabled(true);
-        timeList.push(new Date());
     }
 }
 
