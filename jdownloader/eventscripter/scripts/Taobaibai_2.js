@@ -1,5 +1,6 @@
 // Extract archives after all download have completed
 // Trigger Required: Package Finished
+// In "Archive Extractor" settings, disable the "Extract archives after download (default value)" checkbox
 // Related Post: https://board.jdownloader.org/showpost.php?p=418712&postcount=345
 
 if (allFinished()) getAllDownloadLinks().forEach(function(link) {
