@@ -6,3 +6,7 @@
 archive.getExtractedFilePaths().forEach(function(extractedFile) {
     callSync("compact", "/c", "/exe:lzx", extractedFile);
 });
+
+archive.getDownloadLinks().forEach(function(link) {
+    link.remove();
+});
