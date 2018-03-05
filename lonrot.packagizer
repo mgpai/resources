@@ -1,0 +1,366 @@
+[ {
+  "filetypeFilter" : {
+    "enabled" : true,
+    "audioFilesEnabled" : false,
+    "matchType" : "IS",
+    "useRegex" : false,
+    "hashEnabled" : false,
+    "videoFilesEnabled" : false,
+    "docFilesEnabled" : false,
+    "archivesEnabled" : false,
+    "imagesEnabled" : false,
+    "customs" : "rev"
+  },
+  "staticRule" : true,
+  "originFilter" : {
+    "enabled" : false,
+    "matchType" : "IS",
+    "origins" : null
+  },
+  "hosterURLFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : null,
+    "useRegex" : false
+  },
+  "onlineStatusFilter" : {
+    "enabled" : false,
+    "matchType" : "IS",
+    "onlineStatus" : "OFFLINE"
+  },
+  "created" : 1520245374453,
+  "sourceURLFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : null,
+    "useRegex" : false
+  },
+  "conditionFilter" : {
+    "enabled" : false,
+    "matchType" : "IS_TRUE",
+    "conditions" : null
+  },
+  "iconKey" : "extract",
+  "linkEnabled" : false,
+  "valid" : true,
+  "packagenameFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : null,
+    "useRegex" : false
+  },
+  "filenameFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : null,
+    "useRegex" : false
+  },
+  "name" : "Disable Archive *.rev Files",
+  "matchAlwaysFilter" : {
+    "enabled" : false
+  },
+  "id" : "DisableRevFilesPackageRule",
+  "pluginStatusFilter" : {
+    "enabled" : false,
+    "matchType" : "IS",
+    "pluginStatus" : "PREMIUM"
+  },
+  "filesizeFilter" : {
+    "enabled" : false,
+    "from" : 0,
+    "matchType" : "BETWEEN",
+    "to" : 0
+  }
+}, {
+  "filetypeFilter" : {
+    "enabled" : true,
+    "audioFilesEnabled" : false,
+    "matchType" : "IS",
+    "useRegex" : false,
+    "hashEnabled" : false,
+    "videoFilesEnabled" : false,
+    "docFilesEnabled" : false,
+    "archivesEnabled" : false,
+    "imagesEnabled" : false,
+    "customs" : "par,par2"
+  },
+  "staticRule" : true,
+  "originFilter" : {
+    "enabled" : false,
+    "matchType" : "IS",
+    "origins" : null
+  },
+  "hosterURLFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : null,
+    "useRegex" : false
+  },
+  "onlineStatusFilter" : {
+    "enabled" : false,
+    "matchType" : "IS",
+    "onlineStatus" : "OFFLINE"
+  },
+  "created" : 1520245374453,
+  "sourceURLFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : null,
+    "useRegex" : false
+  },
+  "conditionFilter" : {
+    "enabled" : false,
+    "matchType" : "IS_TRUE",
+    "conditions" : null
+  },
+  "iconKey" : "extract",
+  "linkEnabled" : false,
+  "valid" : true,
+  "packagenameFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : null,
+    "useRegex" : false
+  },
+  "filenameFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : null,
+    "useRegex" : false
+  },
+  "name" : "Disable Parity Archive *.par(2) Files",
+  "matchAlwaysFilter" : {
+    "enabled" : false
+  },
+  "id" : "DisableParFilesPackageRule",
+  "pluginStatusFilter" : {
+    "enabled" : false,
+    "matchType" : "IS",
+    "pluginStatus" : "PREMIUM"
+  },
+  "filesizeFilter" : {
+    "enabled" : false,
+    "from" : 0,
+    "matchType" : "BETWEEN",
+    "to" : 0
+  }
+}, {
+  "filetypeFilter" : {
+    "enabled" : false,
+    "audioFilesEnabled" : false,
+    "matchType" : "IS",
+    "useRegex" : false,
+    "hashEnabled" : false,
+    "videoFilesEnabled" : false,
+    "docFilesEnabled" : false,
+    "archivesEnabled" : false,
+    "imagesEnabled" : false,
+    "customs" : null
+  },
+  "downloadDestination" : "<jd:packagename>",
+  "staticRule" : true,
+  "originFilter" : {
+    "enabled" : false,
+    "matchType" : "IS",
+    "origins" : null
+  },
+  "hosterURLFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : null,
+    "useRegex" : false
+  },
+  "onlineStatusFilter" : {
+    "enabled" : false,
+    "matchType" : "IS",
+    "onlineStatus" : "OFFLINE"
+  },
+  "created" : 1520245374468,
+  "sourceURLFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : null,
+    "useRegex" : false
+  },
+  "conditionFilter" : {
+    "enabled" : false,
+    "matchType" : "IS_TRUE",
+    "conditions" : null
+  },
+  "iconKey" : "folder",
+  "valid" : true,
+  "packagenameFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : null,
+    "useRegex" : false
+  },
+  "filenameFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : null,
+    "useRegex" : false
+  },
+  "name" : "Create Subfolder by Packagename",
+  "matchAlwaysFilter" : {
+    "enabled" : true
+  },
+  "id" : "SubFolderByPackageRule",
+  "pluginStatusFilter" : {
+    "enabled" : false,
+    "matchType" : "IS",
+    "pluginStatus" : "PREMIUM"
+  },
+  "filesizeFilter" : {
+    "enabled" : false,
+    "from" : 0,
+    "matchType" : "BETWEEN",
+    "to" : 0
+  }
+}, {
+  "filetypeFilter" : {
+    "enabled" : false,
+    "audioFilesEnabled" : false,
+    "matchType" : "IS",
+    "useRegex" : false,
+    "hashEnabled" : false,
+    "videoFilesEnabled" : false,
+    "docFilesEnabled" : false,
+    "archivesEnabled" : false,
+    "imagesEnabled" : false,
+    "customs" : null
+  },
+  "downloadDestination" : "<jd:subfolderbyplugin>",
+  "staticRule" : true,
+  "originFilter" : {
+    "enabled" : false,
+    "matchType" : "IS",
+    "origins" : null
+  },
+  "hosterURLFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : null,
+    "useRegex" : false
+  },
+  "onlineStatusFilter" : {
+    "enabled" : false,
+    "matchType" : "IS",
+    "onlineStatus" : "OFFLINE"
+  },
+  "created" : 1520245374484,
+  "sourceURLFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : null,
+    "useRegex" : false
+  },
+  "conditionFilter" : {
+    "enabled" : false,
+    "matchType" : "IS_TRUE",
+    "conditions" : null
+  },
+  "iconKey" : "folder",
+  "valid" : true,
+  "packagenameFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : null,
+    "useRegex" : false
+  },
+  "filenameFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : null,
+    "useRegex" : false
+  },
+  "name" : "Adopt folder structure",
+  "matchAlwaysFilter" : {
+    "enabled" : true
+  },
+  "id" : "SubFolderByPluginRule",
+  "pluginStatusFilter" : {
+    "enabled" : false,
+    "matchType" : "IS",
+    "pluginStatus" : "PREMIUM"
+  },
+  "filesizeFilter" : {
+    "enabled" : false,
+    "from" : 0,
+    "matchType" : "BETWEEN",
+    "to" : 0
+  }
+}, {
+  "filetypeFilter" : {
+    "enabled" : false,
+    "audioFilesEnabled" : false,
+    "matchType" : "IS",
+    "useRegex" : false,
+    "hashEnabled" : false,
+    "videoFilesEnabled" : false,
+    "docFilesEnabled" : false,
+    "archivesEnabled" : false,
+    "imagesEnabled" : false,
+    "customs" : null
+  },
+  "originFilter" : {
+    "enabled" : false,
+    "matchType" : "IS",
+    "origins" : [ ]
+  },
+  "hosterURLFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : "",
+    "useRegex" : false
+  },
+  "onlineStatusFilter" : {
+    "enabled" : false,
+    "matchType" : "IS",
+    "onlineStatus" : "OFFLINE"
+  },
+  "chunks" : -1,
+  "created" : 1520245913000,
+  "sourceURLFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : "",
+    "useRegex" : false
+  },
+  "conditionFilter" : {
+    "enabled" : false,
+    "matchType" : "IS_TRUE",
+    "conditions" : [ ]
+  },
+  "testUrl" : "",
+  "enabled" : true,
+  "valid" : true,
+  "filename" : "<jd:orgfilename:1><jd:orgfilename:2>",
+  "packagenameFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : "(.+)_( .+)",
+    "useRegex" : true
+  },
+  "filenameFilter" : {
+    "enabled" : true,
+    "matchType" : "CONTAINS",
+    "regex" : "(.+?)_( .+)",
+    "useRegex" : true
+  },
+  "name" : "https://board.jdownloader.org/showthread.php?t=76923",
+  "matchAlwaysFilter" : {
+    "enabled" : false
+  },
+  "pluginStatusFilter" : {
+    "enabled" : false,
+    "matchType" : "IS",
+    "pluginStatus" : "PREMIUM"
+  },
+  "filesizeFilter" : {
+    "enabled" : false,
+    "from" : 0,
+    "matchType" : "BETWEEN",
+    "to" : 0
+  }
+} ]
