@@ -5,7 +5,7 @@ var a /*date*/ = now();
 
 alert(a);
 
-//Function
+// Function
 function now() {
     var d = new Date();
     var t = d.toString().split(" ");
