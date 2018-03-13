@@ -3,6 +3,7 @@
 
 moveAllToDownloadList();
 
+// Function
 function moveAllToDownloadList() {
     getAllCrawledPackages().forEach(function(package) {
         callAPI("linkgrabberv2", "moveToDownloadlist", [], [package.getUUID()]);
