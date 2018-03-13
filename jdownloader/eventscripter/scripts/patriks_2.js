@@ -1,4 +1,5 @@
 // Format Date
+// Related Post: https://board.jdownloader.org/showpost.php?p=420365&postcount=375
 
 var a /*date*/ = now();
 
