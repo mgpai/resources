@@ -5,6 +5,7 @@ moveAllToDownloadList();
 
 // Function
 function moveAllToDownloadList() {
+    callAPI("linkgrabberv2", "cleanup", [], [], "DELETE_DUPE", "REMOVE_LINKS_ONLY", "ALL");
     getAllCrawledPackages().forEach(function(package) {
         callAPI("linkgrabberv2", "moveToDownloadlist", [], [package.getUUID()]);
     });
