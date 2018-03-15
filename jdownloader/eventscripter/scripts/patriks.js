@@ -5,8 +5,10 @@ moveAllToDownloadList();
 
 // Function
 function moveAllToDownloadList() {
+    var packages = getAllCrawledPackages();
+    if (!packages.length) return;
     callAPI("linkgrabberv2", "cleanup", [], [], "DELETE_DUPE", "REMOVE_LINKS_ONLY", "ALL");
-    getAllCrawledPackages().forEach(function(package) {
+    packages.forEach(function(package) {
         callAPI("linkgrabberv2", "moveToDownloadlist", [], [package.getUUID()]);
     });
 }
