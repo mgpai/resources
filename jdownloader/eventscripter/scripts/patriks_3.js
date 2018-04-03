@@ -14,7 +14,7 @@ if (link.getHost() == "vkontakte.ru") {
         link.reset();
         link.remove();
     } else {
-        link.setName(link.getProperty("LINKDUPEID") + " - " + link.getProperty("FINAL_FILENAME"));
+        link.setName(newName);
         link.setComment(link.getProperty("picturedirectlink"));
     }
 }
