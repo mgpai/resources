@@ -1,6 +1,6 @@
-// vk.com: If file exists ski,p else rename
-// Trigger: A Download Stopped
-// Forum Post: https://board.jdownloader.org/showpost.php?p=420584&postcount=2614
+// vk.com: If file exists, stop the download and remove the link, else rename it.
+// Trigger: A Download Started
+// Forum Post: https://board.jdownloader.org/showpost.php?p=421495&postcount=402
 
 if (link.getHost() == "vkontakte.ru") {
 
