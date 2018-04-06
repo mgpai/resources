@@ -1,16 +1,22 @@
-// Do something when package is removed
-// Trigger : Package Finished
-// Forum Topic: https://board.jdownloader.org/showpost.php?p=421828&postcount=5
+ // When package is removed, do something with the extraction folders of each archive in that package
+ // Trigger : Package Finished
+ // Forum Topic: https://board.jdownloader.org/showpost.php?p=421828&postcount=5
 
-while (packageExists()) sleep(1000);
+ var extractionFolders = package.getDownloadLinks().map(function(link) {
+     var archive = link.getArchive();
+     if (archive) return link.getArchive().getExtractToFolder();
+ });
 
-/*
-Code to do something goes here.
-*/
+ while (packageExists()) sleep(1000);
 
-//Function
-function packageExists() {
-    return getAllFilePackages().some(function(package) {
-        return package.equals(package);
-    });
-}
+ extractionFolders.forEach(function(extractionFolder) {
+     /* Do something with each extraction folder */
+     if (extractionFolder) callAsync(null, program, extractionFolder);
+ });
+
+ //Function
+ function packageExists() {
+     return getAllFilePackages().some(function(package) {
+         return package.equals(package);
+     });
+ }
