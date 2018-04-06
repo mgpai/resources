@@ -11,7 +11,7 @@
 
  extractionFolders.forEach(function(extractionFolder) {
      /* Do something with each extraction folder */
-     if (extractionFolder) callAsync(null, program, extractionFolder);
+     /* if (extractionFolder) callAsync(null, program, extractionFolder); */
  });
 
  //Function
