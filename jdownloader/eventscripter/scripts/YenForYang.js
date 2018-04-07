@@ -16,7 +16,7 @@
 
  //Function
  function packageExists() {
-     return getAllFilePackages().some(function(package) {
-         return package.equals(package);
+     return getAllFilePackages().some(function(filePackage) {
+         return filePackage.equals(package);
      });
  }
