@@ -15,6 +15,6 @@
         } else {
             path.moveTo(extractionFolder);
         }
-        if (!path.getParent().length) path.getParent().delete();
+        if (!path.getParent().getChildren().length) path.getParent().delete();
     });
 })();
