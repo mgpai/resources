@@ -4,9 +4,9 @@
 // Forum Topic: https://board.jdownloader.org/showthread.php?t=77296
 
 (function() {
+    if (!isSynchronous()) return;
+    var extractionFolder = archive.getExtractToFolder();
     archive.getExtractedFilePaths().forEach(function(path, index) {
-        if (!isSynchronous()) return;
-        var extractionFolder = archive.getExtractToFolder();
         if (path.getParent() == extractionFolder) return;
         var fileName = path.getName();
         var exists = getPath(extractionFolder + "/" + fileName).exists();
