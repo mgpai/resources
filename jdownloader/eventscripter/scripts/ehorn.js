@@ -10,11 +10,7 @@
         if (path.getParent() == extractionFolder) return;
         var fileName = path.getName();
         var exists = getPath(extractionFolder + "/" + fileName).exists();
-        if (exists) {
-            path.renameTo(extractionFolder + "/[" + index + "] " + fileName);
-        } else {
-            path.moveTo(extractionFolder);
-        }
+        exists ? path.renameTo(extractionFolder + "/[" + index + "] " + fileName) : path.moveTo(extractionFolder);
         if (!path.getParent().getChildren().length) path.getParent().delete();
     });
 })();
