@@ -8,10 +8,11 @@
  (function() {
      if (interval < 30000) return;
      if (!isSynchronous) return;
-     if (!isDownloadControllerRunning()) return;
+     var links = getRunningDownloadLinks();
+     if (!links.length) return;
      if (getAverageSpeed() > minSpeed * 1024) return;
-     if (!getRunningDownloadLinks().every(function(link) {
-             return link.getDownloadDuration() > 60000;
+     if (links.some(function(link) {
+             return link.getDownloadDuration() < 60000;
          })) return;
      doReconnect();
  })();
