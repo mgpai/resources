@@ -12,7 +12,7 @@ var myHost = "hostname.com"; // <- Set JD plugin (host) name
     var bytesLoaded = 0;
 
     getAllDownloadLinks().forEach(function(link) {
-        if (link.getHost() != myHost) return;
+        if (link.getContentURL().indexOf(myHost) == -1) return;
         var finishedToday = new Date(link.getFinishedDate()).setHours(0, 0, 0, 0) == new Date().setHours(0, 0, 0, 0);
         var partiallyLoaded = !link.isFinished() && link.getBytesLoaded() > 0;
         if (finishedToday || partiallyLoaded) bytesLoaded += link.getBytesLoaded();
@@ -22,7 +22,7 @@ var myHost = "hostname.com"; // <- Set JD plugin (host) name
 
     function skipHost() {
         getAllDownloadLinks().forEach(function(link) {
-            if (!link.isFinished() && link.getHost() == myHost && !link.isSkipped()) link.setSkipped(true);
+            if (!link.isFinished() && link.getContentURL().indexOf(myHost) > -1 && !link.isSkipped()) link.setSkipped(true);
         });
     }
 })();
