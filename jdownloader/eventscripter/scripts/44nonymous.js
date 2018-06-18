@@ -1,5 +1,5 @@
 // Run external program when all packages finished
-// Trigger: Package Finished
+// Trigger: Download Controller Stopped
 // Forum Post: https://board.jdownloader.org/showpost.php?p=425864&postcount=473
 
 var allPackagesFinished = getAllFilePackages().every(function(package) {
