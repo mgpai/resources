@@ -1,6 +1,6 @@
 // Open url in browser
 // Trigger: Downloadlist Contextmenu Button Pressed
-// Customize download list menu > Add new Eventscripter trigger button > Rename it to "Oper URL" (without quotes)
+// Customize download list menu > Add new Eventscripter trigger button > Rename it to "Open URL" (without quotes)
 
 if (name == "Open URL") {
     var link = dlSelection.getContextLink();
