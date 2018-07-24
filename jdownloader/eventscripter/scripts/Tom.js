@@ -6,7 +6,7 @@ var ffmpeg = callAPI("config", "get", "org.jdownloader.controlling.ffmpeg.FFmpeg
 var ffprobe = callAPI("config", "get", "org.jdownloader.controlling.ffmpeg.FFmpegSetup", null, "binarypathprobe");
 
 files.forEach(function(file) {
-    if (getPath(file).getLinkInfo().desc != "Video File") return;
+    if (getPath(file).getLinkInfo().group != "VideoExtensions") return;
     if (callSync(ffprobe, "-i", file).indexOf("Audio: dts") == -1) return;
     var ext = getPath(file).getExtension();
     callSync(ffmpeg, "-i", file, "-map", "0", "-vcodec", "copy", "-scodec", "copy", "-acodec", "ac3", "-b:a", "640k", file.replace(ext, "-ac3." + ext));
