@@ -9,5 +9,7 @@ files.forEach(function(file) {
     if (getPath(file).getLinkInfo().group != "VideoExtensions") return;
     if (callSync(ffprobe, "-i", file).indexOf("Audio: dts") == -1) return;
     var ext = getPath(file).getExtension();
-    callSync(ffmpeg, "-i", file, "-map", "0", "-vcodec", "copy", "-scodec", "copy", "-acodec", "ac3", "-b:a", "640k", file.replace(ext, "-ac3." + ext));
+    callAsync(function(error) {
+        if (!error) getPath(file).delete();
+    }, ffmpeg, "-i", file, "-map", "0", "-vcodec", "copy", "-scodec", "copy", "-acodec", "ac3", "-b:a", "640k", file.replace(ext, "-ac3." + ext));
 });
