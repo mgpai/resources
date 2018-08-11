@@ -3,7 +3,7 @@
 // Forum Topic: https://board.jdownloader.org/showthread.php?t=68480
 
 if (packageFinished()) {
-    var script = JD_HOME + '/jdownloader-postprocess.sh'
+    var script = JD_HOME + '/jdownloader-postprocess.sh';
     var path = package.getDownloadFolder();
     var name = package.getName();
     var label = package.getComment() || 'N/A';
