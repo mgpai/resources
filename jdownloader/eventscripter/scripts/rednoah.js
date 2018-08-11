@@ -15,6 +15,7 @@ if (packageFinished()) {
 
 //Function
 function packageFinished() {
+    if (event.publisher != "downloads") return;
     var id = event.id;
     if (id != "LINK_UPDATE.status" && id != "LINK_UPDATE.extractionStatus") return;
     var data = JSON.parse(event.data);
