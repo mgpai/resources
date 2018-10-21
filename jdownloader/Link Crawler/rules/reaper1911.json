@@ -1,0 +1,15 @@
+[ {
+  "enabled" : true,
+  "cookies" : null,
+  "updateCookies" : true,
+  "maxDecryptDepth" : 0,
+  "id" : 1540105439125,
+  "name" : null,
+  "pattern" : "https://www.cartoonpornvideos.com/click/[\\d-]+/video/(.+)-.+.html",
+  "rule" : "DEEPDECRYPT",
+  "packageNamePattern" : null,
+  "passwordPattern" : null,
+  "formPattern" : null,
+  "deepPattern" : null,
+  "rewriteReplaceWith" : null
+} ]
