@@ -1,1 +1,72 @@
-
+[ {
+  "filetypeFilter" : {
+    "enabled" : false,
+    "audioFilesEnabled" : false,
+    "matchType" : "IS",
+    "useRegex" : false,
+    "hashEnabled" : false,
+    "videoFilesEnabled" : false,
+    "docFilesEnabled" : false,
+    "archivesEnabled" : false,
+    "imagesEnabled" : false,
+    "customs" : null
+  },
+  "originFilter" : {
+    "enabled" : false,
+    "matchType" : "IS",
+    "origins" : [ ]
+  },
+  "onlineStatusFilter" : {
+    "enabled" : false,
+    "matchType" : "IS",
+    "onlineStatus" : "OFFLINE"
+  },
+  "hosterURLFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : "",
+    "useRegex" : false
+  },
+  "created" : 1540103814687,
+  "sourceURLFilter" : {
+    "enabled" : true,
+    "matchType" : "CONTAINS",
+    "regex" : "https://www.cartoonpornvideos.com/click/[\\d-]+/video/(.+)-.+.html",
+    "useRegex" : true
+  },
+  "conditionFilter" : {
+    "enabled" : false,
+    "matchType" : "IS_TRUE",
+    "conditions" : [ ]
+  },
+  "testUrl" : "https://www.cartoonpornvideos.com/click/1-42/video/princess-rosalina-gets-fucked-in-3d-xENl4qYSUeJ.html",
+  "enabled" : true,
+  "valid" : true,
+  "packagenameFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : "",
+    "useRegex" : false
+  },
+  "filenameFilter" : {
+    "enabled" : true,
+    "matchType" : "CONTAINS_NOT",
+    "regex" : "default",
+    "useRegex" : false
+  },
+  "name" : "www.cartoonpornvideos.com",
+  "matchAlwaysFilter" : {
+    "enabled" : false
+  },
+  "pluginStatusFilter" : {
+    "enabled" : true,
+    "matchType" : "IS",
+    "pluginStatus" : "PREMIUM"
+  },
+  "filesizeFilter" : {
+    "enabled" : false,
+    "from" : 0,
+    "matchType" : "BETWEEN",
+    "to" : 0
+  }
+} ]
