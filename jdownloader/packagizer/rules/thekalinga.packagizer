@@ -1,0 +1,74 @@
+[ {
+  "filetypeFilter" : {
+    "enabled" : false,
+    "audioFilesEnabled" : false,
+    "matchType" : "IS",
+    "useRegex" : false,
+    "hashEnabled" : false,
+    "videoFilesEnabled" : false,
+    "docFilesEnabled" : false,
+    "archivesEnabled" : false,
+    "imagesEnabled" : false,
+    "customs" : null
+  },
+  "originFilter" : {
+    "enabled" : false,
+    "matchType" : "IS",
+    "origins" : [ ]
+  },
+  "hosterURLFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : "",
+    "useRegex" : false
+  },
+  "onlineStatusFilter" : {
+    "enabled" : false,
+    "matchType" : "IS",
+    "onlineStatus" : "OFFLINE"
+  },
+  "chunks" : -1,
+  "created" : 1540306337218,
+  "sourceURLFilter" : {
+    "enabled" : true,
+    "matchType" : "CONTAINS",
+    "regex" : ".+#filename=(.+)",
+    "useRegex" : true
+  },
+  "conditionFilter" : {
+    "enabled" : false,
+    "matchType" : "IS_TRUE",
+    "conditions" : [ ]
+  },
+  "testUrl" : "",
+  "enabled" : true,
+  "valid" : true,
+  "filename" : "<jd:source:1>",
+  "packagenameFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : "",
+    "useRegex" : false
+  },
+  "filenameFilter" : {
+    "enabled" : false,
+    "matchType" : "CONTAINS",
+    "regex" : "",
+    "useRegex" : false
+  },
+  "name" : "Parse file name from URL (https://board.jdownloader.org/showthread.php?t=79010)",
+  "matchAlwaysFilter" : {
+    "enabled" : false
+  },
+  "pluginStatusFilter" : {
+    "enabled" : false,
+    "matchType" : "IS",
+    "pluginStatus" : "PREMIUM"
+  },
+  "filesizeFilter" : {
+    "enabled" : false,
+    "from" : 0,
+    "matchType" : "BETWEEN",
+    "to" : 0
+  }
+} ]
