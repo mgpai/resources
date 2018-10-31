@@ -12,5 +12,5 @@
             link.setSkipped(false);
             if (!isDownloadControllerRunning()) startDownloads();
         }
-    })
+    });
 })();
