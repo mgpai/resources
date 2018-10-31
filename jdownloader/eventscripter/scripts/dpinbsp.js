@@ -8,6 +8,9 @@
     if (!isSynchronous()) return;
     if (interval < 60 * 60 * 1000) return;
     getAllDownloadLinks().forEach(function(link) {
-        if (link.getSkippedReason() == "CAPTCHA") link.setSkipped(false);
+        if (link.getSkippedReason() == "CAPTCHA") {
+            link.setSkipped(false);
+            if (!isDownloadControllerRunning()) startDownloads();
+        }
     })
 })();
